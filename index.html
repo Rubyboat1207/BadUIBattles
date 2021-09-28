@@ -7,17 +7,25 @@
     
     <body>
         <header>
-            <h1 class="epic">Login, I DARE you</h1>
+            <a class="title">Login. I <i>DARE</i> you</h1>
         </header>
-        <a>Username: </a>
-        <a id="username"></a>
+        <a class="fields">Username: </a>
+        <text id="username", class="fields"></text>
         <br>
         <button onclick="getImages();" class="imgbutton">Get Image</button>    
         <button onclick="SelectLetter();" class="imgbutton">Select</button>    
-        <button id="clear" class="imgbutton">Clear</button>
-        <div id="img-area" style="min-height:100px;">
+        <div id="img-area" style="min-height:125px;">
             
         </div>
+        <a class="fields">Password: </a> <a class="fields" id="realpass"></a><a class="fields" id="pass"></a>
+        <br>
+        <button id="SelectPass" class="imgbutton">Select</button>
+        <br>
+        <br>
         <button id="submit" class="imgbutton">Submit</button>
+        <button id="clear" class="imgbutton">Clear</button>
+
+        <br>
+        <a id="prize"></a>
     </body>
 </html>

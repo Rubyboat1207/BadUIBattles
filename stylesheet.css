@@ -1,3 +1,11 @@
+body{
+    background-color: yellow;
+}
+button{
+    font-family: ComicSans;
+    font-size: 18px;
+    font-weight: bold;
+}
 .imgbutton{
     background-color : red;
     color: cyan;
@@ -6,6 +14,17 @@
 .googleimg{
     width: 100px;
     height: 100px;
+}
+.title{
+    font-family: ComicSans;
+    font-size: 36px;
+    font-weight: bold;
+}
+.fields{
+    font-family: ComicSans;
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
 }
 @font-face {
     font-family: ComicSans;
