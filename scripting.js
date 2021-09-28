@@ -3,6 +3,23 @@ function RandomLetter()
     return String.fromCharCode(97 + Math.round(Math.random() * 25));
 }
 let currentletter = "";
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("before")
+    document.getElementById("clear").addEventListener('click', function()
+    {
+        ClearId("username");
+    });
+    document.getElementById("submit").addEventListener('click', function()
+    {
+        if(document.getElementById("username").innerHTML == "rubyboat")
+        {
+            document.getElementById("username").innerHTML = "THE SECRET PASSCODE IS: Jrv1000 "
+        }
+    });
+    console.log("after")    
+});
+
 //key:
 //AIzaSyDQd1GjEg6-hO-h2Qryef1h7CiAIy-wxE4
 //CSE
@@ -30,7 +47,8 @@ function SelectLetter()
 {
     document.getElementById("username").innerHTML += currentletter;
 }
-function ClearUsername()
+function ClearId(id)
 {
-    document.getElementById("username").innerHTML = "Username: ";
+    document.getElementById(id).innerHTML = "";
+    console.log("test");
 }
