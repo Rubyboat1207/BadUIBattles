@@ -14,7 +14,7 @@ function updatepassword()
     {
         currentnumberpass = -1;
     }
-    if(document.getElementById("realpass").innerHTML.length <= 7)
+    if(document.getElementById("realpass").innerHTML.length <= 55)
     {
         setTimeout(() => {  updatepassword() }, 400);
     }else
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById("submit").addEventListener('click', function()
     {
-        if(document.getElementById("username").innerHTML == "rubyboat")
+        if(document.getElementById("username").innerHTML == "gravity")
         {
-            if(document.getElementById("realpass").innerHTML == "password")
+            if(document.getElementById("realpass").innerHTML == "rudyisreallydumbandsomeotherlettersothatyoucanfaileasier")
             {
                 document.getElementById("prize").innerHTML = "Here is your prize: <br> https://pastebin.com/Crd3my0b"
             }
