@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.getElementById("submit").addEventListener('click', function()
     {
+        console.log("test")
         if(document.getElementById("username").innerHTML == "rubyboat")
         {
             document.getElementById("username").innerHTML = "THE SECRET PASSCODE IS: Jrv1000 "
