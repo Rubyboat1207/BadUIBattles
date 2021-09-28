@@ -1,9 +1,13 @@
 .imgbutton{
     background-color : red;
     color: cyan;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "ComicSans";
 }
 .googleimg{
     width: 100px;
     height: 100px;
 }
+@font-face {
+    font-family: ComicSans;
+    src: url(fonts/ComicSans.ttf);
+  }
