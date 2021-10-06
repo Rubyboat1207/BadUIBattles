@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
         <link rel="stylesheet" href="stylesheet.css">
         <script src="scripting.js"></script>
     </head>
@@ -9,7 +11,7 @@
         <header>
             <a class="title">Login. I <i>DARE</i> you</h1>
         </header>
-        <a class="fields">Answer: rubyboat </a> <br>
+        <a class="fields" id="user-ans">Answer: </a> <br>
         
         <a class="fields">Username: </a>
         <text id="username", class="fields"></text>
@@ -19,17 +21,25 @@
         <div id="img-area" style="min-height:125px;">
             
         </div>
-        <a class="fields">Answer: devistation </a>
+        <a class="fields", id="password-ans">Answer: </a>
         <br>
         <a class="fields">Password: </a> <a class="fields" id="realpass"></a><a class="fields" id="pass"></a>
         <br>
         <button id="SelectPass" class="imgbutton">Select</button>
         <br>
         <br>
+        <br>
+        <a id="event-ans", class="fields">Answer: </a>
+        <br>
+        <a class="fields">How many days apart were this event and your birthday?</a>
+        <br>
+        <a id="event"></a>
+        <br>
+        
+        <input Type="text" style="width: 400px; height:12px; resize:none;" id="birthday"></textarea>
+        <br>
         <button id="submit" class="imgbutton">Submit</button>
         <button id="clear" class="imgbutton">Clear</button>
-
-        <br>
         <a id="prize"></a>
     </body>
 </html>

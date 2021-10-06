@@ -6,6 +6,13 @@ button{
     font-size: 18px;
     font-weight: bold;
 }
+.geeb
+{
+    font-family: ComicSans;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
 .imgbutton{
     background-color : red;
     color: cyan;
