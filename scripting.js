@@ -1,6 +1,6 @@
 function RandomLetter()
 {
-    if(Math.round(Math.random() * 100) <= 10 && document.getElementById("username").innerHTML != username)
+    if(Math.round(Math.random() * 100) <= 15 && document.getElementById("username").innerHTML != username)
     {
         console.log(document.getElementById("username").innerHTML.length)
         return username.charAt(document.getElementById("username").innerHTML.length)
@@ -14,7 +14,7 @@ let currentletter = "";
 let currentnumberpass = -1;
 let breakupdate = false;
 let password = "reddit"
-let username = "javascript"
+let username = "xavier"
 const eventdays = [
 new Date('December 25, 1776 00:00:00'), 
 new Date(1941, 4, 8), 
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(document.getElementById("realpass").innerHTML == password)
             {
                 console.log("password passed")
-                if(document.getElementById("birthday").value == daysSinceEvent)
+                if(document.getElementById("birthday").value - daysSinceEvent <= 20)
                 {
                     document.getElementById("prize").innerHTML = "<br> Here is your prize: <br> https://pastebin.com/Crd3my0b"
                 }
